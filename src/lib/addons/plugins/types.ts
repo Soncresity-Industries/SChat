@@ -1,4 +1,4 @@
-import { BunnyManifest } from "@lib/addons/types";
+import { SChatManifest } from "@lib/addons/types";
 import { createStorage } from "@lib/api/storage";
 import { Logger } from "@lib/utils/logger";
 
@@ -23,13 +23,13 @@ export interface PluginSettingsStorage {
     };
 }
 
-export interface BunnyPluginManifest extends BunnyManifest {
+export interface SChatPluginManifest extends SChatManifest {
     readonly type: "plugin";
     readonly spec: 3;
     readonly main: string;
 }
 
-export interface BunnyPluginManifestInternal extends BunnyPluginManifest {
+export interface SChatPluginManifestInternal extends SChatPluginManifest {
     readonly parentRepository: string;
     readonly jsPath?: string;
 }
@@ -41,15 +41,15 @@ export interface PluginInstance {
 }
 
 export interface PluginInstanceInternal extends PluginInstance {
-    readonly manifest: BunnyPluginManifest;
+    readonly manifest: SChatPluginManifest;
 }
 
-export interface BunnyPluginProperty {
-    readonly manifest: BunnyPluginManifestInternal;
+export interface SChatPluginProperty {
+    readonly manifest: SChatPluginManifestInternal;
     readonly logger: Logger;
     createStorage<T extends object>(): ReturnType<typeof createStorage<T>>;
 }
 
-export type BunnyPluginObject = typeof window.bunny & {
-    plugin: BunnyPluginProperty;
+export type SChatPluginObject = typeof window.schat & {
+    plugin: SChatPluginProperty;
 };

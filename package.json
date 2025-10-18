@@ -1,9 +1,9 @@
 {
-    "name": "bunny",
+    "name": "SChat",
     "private": true,
     "author": {
-        "name": "Pyoncord Team",
-        "url": "https://github.com/pyoncord"
+        "name": "Soncresity Industries",
+        "url": "https://github.com/Soncresity-Industries"
     },
     "scripts": {
         "build": "node scripts/build.mjs",

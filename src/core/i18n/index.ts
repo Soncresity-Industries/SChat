@@ -45,7 +45,7 @@ export function initFetchI18nStrings() {
         if (!_loadedLocale.has(resolvedLocale)) {
             _loadedLocale.add(resolvedLocale);
 
-            fetch(`https://raw.githubusercontent.com/pyoncord/i18n/main/resources/${resolvedLocale}/bunny.json`)
+            fetch(`https://raw.githubusercontent.com/Soncresity-Industries/SChat-i18n/main/resources/${resolvedLocale}/schat.json`)
                 .then(r => r.json())
                 .then(strings => _loadedStrings[resolvedLocale] = strings)
                 .then(() => resolvedLocale === _lastSetLocale && (_currentLocale = resolvedLocale))

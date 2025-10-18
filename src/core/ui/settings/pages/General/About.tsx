@@ -1,5 +1,5 @@
 import { Strings } from "@core/i18n";
-import { PyoncordIcon } from "@core/ui/settings";
+import { SIIcon } from "@core/ui/settings";
 import Version from "@core/ui/settings/pages/General/Version";
 import { useProxy } from "@core/vendetta/storage";
 import { getDebugInfo } from "@lib/api/debug";
@@ -13,9 +13,9 @@ export default function About() {
 
     const versions = [
         {
-            label: Strings.BUNNY,
-            version: debugInfo.bunny.version,
-            icon: { uri: PyoncordIcon },
+            label: Strings.SCHAT,
+            version: debugInfo.schat.version,
+            icon: { uri: SIIcon },
         },
         {
             label: "Discord",
@@ -42,7 +42,7 @@ export default function About() {
     const platformInfo = [
         {
             label: Strings.LOADER,
-            version: `${debugInfo.bunny.loader.name} (${debugInfo.bunny.loader.version})`,
+            version: `${debugInfo.schat.loader.name} (${debugInfo.schat.loader.version})`,
             icon: "DownloadIcon",
         },
         {

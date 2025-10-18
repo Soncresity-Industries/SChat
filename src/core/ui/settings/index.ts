@@ -1,47 +1,47 @@
-import PyoncordIcon from "@assets/icons/pyoncord.png";
+import SIIcon from "@assets/icons/si.png";
 import { Strings } from "@core/i18n";
 import { useProxy } from "@core/vendetta/storage";
 import { findAssetId } from "@lib/api/assets";
 import { isFontSupported, isThemeSupported } from "@lib/api/native/loader";
 import { settings } from "@lib/api/settings";
 import { registerSection } from "@ui/settings";
-import { version } from "bunny-build-info";
+import { version } from "schat-build-info";
 
-export { PyoncordIcon };
+export { SIIcon };
 
 export default function initSettings() {
     registerSection({
-        name: "Bunny",
+        name: "SChat",
         items: [
             {
-                key: "BUNNY",
-                title: () => Strings.BUNNY,
-                icon: { uri: PyoncordIcon },
+                key: "SCHAT",
+                title: () => Strings.SCHAT,
+                icon: { uri: SIIcon },
                 render: () => import("@core/ui/settings/pages/General"),
                 useTrailing: () => `(${version})`
             },
             {
-                key: "BUNNY_PLUGINS",
+                key: "SCHAT_PLUGINS",
                 title: () => Strings.PLUGINS,
                 icon: findAssetId("ActivitiesIcon"),
                 render: () => import("@core/ui/settings/pages/Plugins")
             },
             {
-                key: "BUNNY_THEMES",
+                key: "SCHAT_THEMES",
                 title: () => Strings.THEMES,
                 icon: findAssetId("PaintPaletteIcon"),
                 render: () => import("@core/ui/settings/pages/Themes"),
                 usePredicate: () => isThemeSupported()
             },
             {
-                key: "BUNNY_FONTS",
+                key: "SCHAT_FONTS",
                 title: () => Strings.FONTS,
                 icon: findAssetId("ic_add_text"),
                 render: () => import("@core/ui/settings/pages/Fonts"),
                 usePredicate: () => isFontSupported()
             },
             {
-                key: "BUNNY_DEVELOPER",
+                key: "SHCAT_DEVELOPER",
                 title: () => Strings.DEVELOPER,
                 icon: findAssetId("WrenchIcon"),
                 render: () => import("@core/ui/settings/pages/Developer"),

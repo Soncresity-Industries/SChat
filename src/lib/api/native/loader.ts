@@ -139,7 +139,7 @@ export function getStoredTheme(): VdThemeInfo | null {
 
 export function getThemeFilePath() {
     if (isPyonLoader()) {
-        return "pyoncord/current-theme.json";
+        return "schat/current-theme.json";
     } else if (isVendettaLoader()) {
         return "vendetta_theme.json";
     }
@@ -162,8 +162,8 @@ export function getReactDevToolsProp(): string | null {
     if (!isReactDevToolsPreloaded()) return null;
 
     if (isPyonLoader()) {
-        window.__pyoncord_rdt = window.__reactDevTools.exports;
-        return "__pyoncord_rdt";
+        window.__schat_rdt = window.__reactDevTools.exports;
+        return "__schat_rdt";
     }
 
     if (isVendettaLoader()) {
@@ -208,7 +208,7 @@ export function getSysColors() {
 
 export function getLoaderConfigPath() {
     if (isPyonLoader()) {
-        return "pyoncord/loader.json";
+        return "schat/loader.json";
     } else if (isVendettaLoader()) {
         return "vendetta_loader.json";
     }

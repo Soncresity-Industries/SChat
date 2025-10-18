@@ -34,7 +34,7 @@ export async function createVdPluginObject(plugin: VendettaPlugin) {
             // Wrapping this with wrapSync is NOT an option.
             storage: await createStorage<Record<string, any>>(storage.createMMKVBackend(plugin.id)),
         },
-        logger: new LoggerClass(`Bunny » ${plugin.manifest.name}`),
+        logger: new LoggerClass(`SChat » ${plugin.manifest.name}`),
     };
 }
 
@@ -227,7 +227,7 @@ export const initVendettaObject = (): any => {
             createFileBackend: (file: string) => {
                 // Redirect path to vendetta_theme.json
                 if (isPyonLoader() && file === "vendetta_theme.json") {
-                    file = "pyoncord/current-theme.json";
+                    file = "schat/current-theme.json";
                 }
 
                 return storage.createFileBackend(file);

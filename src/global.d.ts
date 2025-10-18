@@ -10,7 +10,7 @@ declare global {
         interface Window {
                 [key: string]: any;
                 vendetta: any;
-                bunny: typeof import("@lib");
+                schat: typeof import("@lib");
         }
 }
 

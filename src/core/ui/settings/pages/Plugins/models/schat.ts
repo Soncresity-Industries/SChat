@@ -1,11 +1,11 @@
-import { PyoncordIcon } from "@core/ui/settings";
+import { SIIcon } from "@core/ui/settings";
 import { disablePlugin, enablePlugin, getPluginSettingsComponent, isPluginEnabled, pluginSettings } from "@lib/addons/plugins";
-import { BunnyPluginManifest } from "@lib/addons/plugins/types";
+import { SChatPluginManifest } from "@lib/addons/plugins/types";
 import { useObservable } from "@lib/api/storage";
 
 import { UnifiedPluginModel } from ".";
 
-export default function unifyBunnyPlugin(manifest: BunnyPluginManifest): UnifiedPluginModel {
+export default function unifySChatPlugin(manifest: SChatPluginManifest): UnifiedPluginModel {
     return {
         id: manifest.id,
         name: manifest.display.name,
@@ -14,7 +14,7 @@ export default function unifyBunnyPlugin(manifest: BunnyPluginManifest): Unified
 
         getBadges() {
             return [
-                { source: { uri: PyoncordIcon } },
+                { source: { uri: SIIcon } },
                 // { source: findAssetId("CheckmarkLargeBoldIcon")! }
             ];
         },
