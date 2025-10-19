@@ -40,7 +40,7 @@ export const VdPluginManager = {
     async pluginFetch(url: string) {
         if (url.startsWith(VD_PROXY_PREFIX)) {
             url = url
-                .replace("https://soncresity-industries.github.io/plugins-proxy", SCHAT_PROXY_PREFIX)
+                .replace("https://bunny-mod.github.io/plugins-proxy", SCHAT_PROXY_PREFIX)
                 .replace(VD_PROXY_PREFIX, SCHAT_PROXY_PREFIX);
         }
 
