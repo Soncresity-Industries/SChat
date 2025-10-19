@@ -1,10 +1,3 @@
-> [!IMPORTANT]
-> ## Project Archival
-> 
-> **This project is no longer actively maintained and this repository has been archived.**
->
-> We want to thank all contributors and users for their support over the project's lifetime. While development has ceased, the code remains available for those who may find it useful.
-
 # SChat [![Discord](https://img.shields.io/discord/1196075698301968455?style=social&logo=discord&label=Soncresity-Industries)](https://discord.gg/uqbQvAHHve)
 A mod for Discord's mobile apps.
 
