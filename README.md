@@ -32,3 +32,9 @@ A mod for Discord's mobile apps.
 1. Make your changes, rebuild, reload, go wild!
 
 Alternatively, you can directly *serve* the bundled code by running `pnpm serve`. `schat.js` will be served on your local address under the port 4040. You will then insert `http://<local ip address>:4040/schat.js` as a custom url and reload. Whenever you restart your mobile client, the script will rebuild the bundle as your client fetches it.
+
+> [!IMPORTANT]
+> This repo has been forked from the @bunny-mod/Bunny Repo.
+> This project is merely a continuation of the original Software just under a different name and more features that we have planned for the future.
+> As such all credit goes to the anazing creators of Bunny and BunnyTweak.
+> **This project is licensed under the BSD License (BSD)**
