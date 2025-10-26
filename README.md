@@ -1,4 +1,4 @@
-# SChat [![Discord](https://img.shields.io/discord/1196075698301968455?style=social&logo=discord&label=Soncresity-Industries)](https://discord.gg/uqbQvAHHve)
+# SChat Mobile [![Discord](https://img.shields.io/discord/1196075698301968455?style=social&logo=discord&label=Soncresity-Industries)](https://discord.gg/uqbQvAHHve)
 A mod for Discord's mobile apps.
 
 ## Installing
@@ -16,7 +16,7 @@ A mod for Discord's mobile apps.
 1. Go to Settings > General and enable Developer Settings.
 1. Clone the repo:
     ```
-    git clone https://github.com/Soncresity-Industries/SChat
+    git clone https://github.com/Soncresity-Industries/SChat-Mobile
     ```
 1. Install dependencies:
     ```
